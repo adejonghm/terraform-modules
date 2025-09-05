@@ -6,7 +6,7 @@ September 4, 2025
 */
 
 
-variable "rg_name" {
+variable "vnet_rg" {
   description = "The name of the Azure Resource Group where the subnet will be created."
   type        = string
 }
@@ -24,4 +24,4 @@ variable "snet_name" {
 variable "address_prefixes" {
   description = "A list of address prefixes (CIDR blocks) to associate with the subnet."
   type        = list(string)
-} 
+}
